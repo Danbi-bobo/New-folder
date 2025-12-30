@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-popover: oklch(1 0 0);
+  --color-popover-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.45 0.15 30);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-accent: oklch(0.55 0.15 50);
+  --color-accent-foreground: oklch(0.985 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.922 0 0);
+  --color-input: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Tu Vi Chart CSS Variables */
+  --chart-bg: oklch(0.98 0.01 60);
+  --chart-border: oklch(0.8 0.05 50);
+  --chart-header: oklch(0.4 0.1 30);
+  --cung-bg: oklch(0.995 0.005 60);
+  --center-bg: oklch(0.96 0.02 55);
+
+  /* Ngũ Hành Colors */
+  --hanh-kim: oklch(0.7 0.15 250);
+  --hanh-moc: oklch(0.5 0.2 145);
+  --hanh-thuy: oklch(0.45 0.15 240);
+  --hanh-hoa: oklch(0.55 0.25 25);
+  --hanh-tho: oklch(0.55 0.12 70);
+}
+
+.dark {
+  --color-background: oklch(0.145 0 0);
+  --color-foreground: oklch(0.985 0 0);
+  --color-card: oklch(0.205 0 0);
+  --color-card-foreground: oklch(0.985 0 0);
+  --color-popover: oklch(0.205 0 0);
+  --color-popover-foreground: oklch(0.985 0 0);
+  --color-primary: oklch(0.75 0.15 30);
+  --color-primary-foreground: oklch(0.145 0 0);
+  --color-secondary: oklch(0.269 0 0);
+  --color-secondary-foreground: oklch(0.985 0 0);
+  --color-muted: oklch(0.269 0 0);
+  --color-muted-foreground: oklch(0.708 0 0);
+  --color-accent: oklch(0.65 0.15 50);
+  --color-accent-foreground: oklch(0.145 0 0);
+  --color-destructive: oklch(0.704 0.191 22.216);
+  --color-border: oklch(1 0 0 / 10%);
+  --color-input: oklch(1 0 0 / 15%);
+  --color-ring: oklch(0.556 0 0);
+
+  /* Tu Vi Chart CSS Variables - Dark */
+  --chart-bg: oklch(0.2 0.02 60);
+  --chart-border: oklch(0.35 0.05 50);
+  --chart-header: oklch(0.8 0.1 50);
+  --cung-bg: oklch(0.18 0.01 60);
+  --center-bg: oklch(0.22 0.02 55);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Ngũ Hành Text Colors */
+.hanh-kim {
+  color: var(--hanh-kim);
+}
+
+.hanh-moc {
+  color: var(--hanh-moc);
+}
+
+.hanh-thuy {
+  color: var(--hanh-thuy);
+}
+
+.hanh-hoa {
+  color: var(--hanh-hoa);
+}
+
+.hanh-tho {
+  color: var(--hanh-tho);
+}
